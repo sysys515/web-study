@@ -341,13 +341,44 @@ main {
     color: black;
 }
 
-#main-bnews {
+#main-bnews{ /* 연합뉴스 디자인 1번*/
     float: left;
     width: 750px;
     height: 49px;
-    background: antiquewhite;
+    margin-bottom: 13px;
     margin-right: 30px;
-    margin-bottom: 11px;
+    padding: 12px 15px 11px 15px;
+    background-color: #f7f9fa;
+    border: 1px solid #dae1e6;
+    line-height: 24px;
+    color: #202020;
+
+}
+
+#main-bnews h3 { /* 연합뉴스 디자인*/
+    float: left;
+    font-size: 12px;
+    margin-right: 7px;
+
+}
+
+#main-bnews a{ /* 노출된 뉴스의 디자인 */
+    text-decoration: none;
+    color: #202020;
+    font-size: 12px;
+}
+
+#menu-news { /* 네이버 뉴스 ~ 경제 디자인*/
+    float: right;
+    font-weight: 700;
+    margin: 1px 8px;
+    font-size: 13px;
+}
+
+#menu-news span { /* 네이버 뉴스 파란색 만들어주기 */
+    text-decoration: none;
+    color: #3565c9;
+    margin-right: 4px;
 }
 
 #main-stock {
@@ -367,13 +398,67 @@ main {
     vertical-align: top;
 }
 
-#main-newsstand {
+#main-newsstand{
     float: left;
     width: 750px;
-    height: 318px;
-    margin-bottom: 11px;
-    background: antiquewhite;
-    margin-right: 30px;
+    height: 316px;
+    background: white;
+    margin-bottom: 13px;
+}
+#main-newsstand span {
+    display: inline-block;
+    width: 32px;
+    height: 24px;
+    vertical-align: top;
+    margin: -6px 1px 0 0;
+    /* 뉴스 이미지 잡아주기 */
+    background: url(./sp_main_16ad06.png) -228px -296px no-repeat;
+    background-size: 440px 410px;
+}
+/* 3번 뉴스 목록 디자인 ㅎ*/
+#main-newsstand h3 { /* newsstand 에서 h3가 높이 45를 가져감 */
+    height: 56px;
+    border-bottom: 1px solid #ebeef3;
+    padding: 16px 0 16px;
+    font-size: 14px;
+    line-height: 18px;
+}
+#main-newsstand a { /* 4-1번 열심히 검은색에 a태그 흔적 지워주기*/
+    text-decoration: none;
+    color: #202020;
+}
+/* 4-2번 목록 메뉴 설정 옆으로 보내주기*/
+#news-menu{
+    float: right;
+}
+#main-newsstand h4 { /* 4-3번 중간 구독한 언론사 옅게 해주기*/
+    display: inline-block;
+    text-decoration: none;
+    font-size: 14px;
+    font-family:'Malgun Gothic';
+}
+/* 3-1 번 */ /* 뉴스의 스타일을 디자인*/
+#main-newsstand ul { /* 개발자 도구를 올려보고 마진 패팅 리스트 스타일이 보여서 지운다.*/
+    display: inline-block; /* 다 만들고 나서 뉴스 목록쪽을 보면 옆이 살짝 비는데 이를 해결하기 위함 */
+    margin: 0;
+    padding: 0;
+    list-style: none; /* 옆에 점이 사라진다. */
+}
+#main-newsstand li { /* 3-2번 리스트들을 옆으로 정리하고 중앙에 보내기*/
+    float: left; /* 리스트들을 옆으로 정렬 */
+    width: calc(100% / 6); /* 보통 6등분을 하고싶은데 계산기를 굴릴순 없으니 이런 식을 쓴다 .*/
+    height: 65px;
+    /* 경계선은 살펴보면 바보도 오른쪽이랑 밑만 넣어주면 되는게 보인다.*/
+    border-left: 1px solid #ebeef3;
+    border-right: 1px solid #ebeef3;
+    border-bottom: 1px solid #ebeef3;
+    text-align: center; /* 내부 컨텐츠가 가운데 정렬 자식이 -> 부모에ㅅ게 명령*/
+}
+#main-newsstand li img { /* 3-3번 뉴스 제대로 위치 잡아주기*/
+    position: relative;
+    top: 50%; /* 부모의 길이로 부터 50% */
+    transform: translateY(-50%); /* 얘를 안해주면 위치가 이상해진다. */
+    /* 부모는 가로 자식은 세로를 맡음 */
 }
 
 #main-category {
